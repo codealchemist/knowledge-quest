@@ -3,7 +3,23 @@
 const fs = require('fs')
 const path = require('path')
 const inquirer = require('inquirer')
-const questionsSource = require('require-dir')('./questions')
+const args = process.argv.slice(2)
+
+// Load questions from specified file or load default questions.
+let questionsSource
+const customQuestionsPath = args[0]
+if (customQuestionsPath) {
+  try {
+    questionsSource = require('require-dir')(customQuestionsPath)
+    console.log(`- Loading custom questions from: ${customQuestionsPath}`)
+  } catch (e) {
+    console.log('- Unable to load custom questions.', e)
+    process.exit()
+  }
+} else {
+  questionsSource = require('require-dir')('./questions')
+}
+
 const topics = []
 
 // print ascii art
