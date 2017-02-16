@@ -1,0 +1,42 @@
+{
+  "JavaScript": [
+    {
+      "type": "list",
+      "name": "promises",
+      "message": "Select a proper implementation for promises in NodeJS:",
+      "choices": [
+        {
+          "name": "new Promise((resolve, reject) => {...})",
+          "value": true
+        },
+        {
+          "name": "Promise((resolve, reject) => {...})",
+          "value": false
+        },
+        {
+          "name": "const promise = new Promise(); promise.resolve(true)",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "event-loop",
+      "message": "When does the event loop runs in the browser?",
+      "choices": [
+        {
+          "name": "Always.",
+          "value": true
+        },
+        {
+          "name": "Once each time a function is excecuted.",
+          "value": false
+        },
+        {
+          "name": "After each line of code is read by the interpreter.",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

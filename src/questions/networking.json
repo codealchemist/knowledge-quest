@@ -1,0 +1,50 @@
+{
+  "Networking": [
+    {
+      "type": "list",
+      "name": "wan",
+      "message": "What does WAN mean?",
+      "choices": [
+        {
+          "name": "World Area Network",
+          "value": false
+        },
+        {
+          "name": "Wireless Area Network",
+          "value": false
+        },
+        {
+          "name": "Wide Area Network",
+          "value": true
+        },
+        {
+          "name": "Windows Active Networking",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "hostname",
+      "message": "Which command do you use to get the host name of a machine running a Unix like OS?",
+      "choices": [
+        {
+          "name": "host",
+          "value": false
+        },
+        {
+          "name": "gethost",
+          "value": false
+        },
+        {
+          "name": "hostname",
+          "value": true
+        },
+        {
+          "name": "echo $HOST",
+          "value": false
+        }
+      ]
+    }
+  ]
+}

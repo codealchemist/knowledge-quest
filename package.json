@@ -1,0 +1,29 @@
+{
+  "name": "knowledge-quest",
+  "version": "1.0.0",
+  "description": "Answer multiple choice questions and get a result of how well you did it.",
+  "main": "src/index.js",
+  "bin": {
+    "knowledge-quest": "src/index.js"
+  },
+  "scripts": {
+    "test": "standard",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "questions",
+    "answers",
+    "compete",
+    "friends"
+  ],
+  "author": "Alberto Miranda",
+  "repository": "codealchemist/knowledge-quest",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^3.0.1",
+    "require-dir": "^0.3.1"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
+}
