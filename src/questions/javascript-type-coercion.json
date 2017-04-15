@@ -1,0 +1,493 @@
+{
+  "JavaScript Type Coercion": [
+    {
+      "type": "list",
+      "name": "Type coercion 1",
+      "message": "What's the output for: 1 == '1'",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 2",
+      "message": "What's the output for: 1 === '1'",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": true
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 3",
+      "message": "What's the output for: 1 == [1]",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 4",
+      "message": "What's the output for: 'a' == ['a']",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 5",
+      "message": "What's the output for: [] == 0",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 6",
+      "message": "What's the output for: [] == '0'",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": true
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 7",
+      "message": "What's the output for: ![] == []",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 8",
+      "message": "What's the output for: !![]",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 9",
+      "message": "What's the output for: !![]+!![]",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "2",
+          "value": true
+        },
+        {
+          "name": "0",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 10",
+      "message": "What's the output for: ![]+![]",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "0",
+          "value": true
+        },
+        {
+          "name": "1",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 11",
+      "message": "What's the output for: Array(16).join( 'hero'-1) + 'Batman'",
+      "choices": [
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "NaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNNaNBatman",
+          "value": true
+        },
+        {
+          "name": "SyntaxError",
+          "value": false
+        },
+        {
+          "name": "Batman",
+          "value": false
+        },
+        {
+          "name": "0000000000000000Batman",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 12",
+      "message": "What's the output for: '4' * '2'",
+      "choices": [
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "42",
+          "value": false
+        },
+        {
+          "name": "8",
+          "value": true
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 13",
+      "message": "What's the output for: '4' + 2",
+      "choices": [
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "42",
+          "value": true
+        },
+        {
+          "name": "6",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 14",
+      "message": "What's the output for: null == false",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": true
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 15",
+      "message": "What's the output for: null == Object.null",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 16",
+      "message": "What's the output for: null === Object.null",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": true
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 17",
+      "message": "What's the output for: null + 1",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "1",
+          "value": true
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 18",
+      "message": "What's the output for: null + '1'",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "1",
+          "value": false
+        },
+        {
+          "name": "01",
+          "value": false
+        },
+        {
+          "name": "null1",
+          "value": true
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 19",
+      "message": "What's the output for: null + null",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        },
+        {
+          "name": "0",
+          "value": true
+        },
+        {
+          "name": "1",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 20",
+      "message": "What's the output for: null == undefined",
+      "choices": [
+        {
+          "name": "true",
+          "value": true
+        },
+        {
+          "name": "false",
+          "value": false
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 21",
+      "message": "What's the output for: null === undefined",
+      "choices": [
+        {
+          "name": "true",
+          "value": false
+        },
+        {
+          "name": "false",
+          "value": true
+        },
+        {
+          "name": "TypeError",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 22",
+      "message": "What's the output for: typeof null",
+      "choices": [
+        {
+          "name": "'number'",
+          "value": false
+        },
+        {
+          "name": "'object'",
+          "value": true
+        },
+        {
+          "name": "'null'",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "name": "Type coercion 23",
+      "message": "What's the output for: typeof undefined",
+      "choices": [
+        {
+          "name": "'number'",
+          "value": false
+        },
+        {
+          "name": "'object'",
+          "value": false
+        },
+        {
+          "name": "'null'",
+          "value": false
+        },
+        {
+          "name": "'undefined'",
+          "value": true
+        }
+      ]
+    }
+  ]
+}

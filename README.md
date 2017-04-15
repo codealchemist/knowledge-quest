@@ -22,6 +22,7 @@ Answer multiple choice questions and get a result of how well you did it.
     - Incorrect: 0
 ```
 
+
 ## How it works?
 
 **knowledge-quest** reads JSON questions files in a directory and it constructs a topics menu from 
@@ -32,22 +33,72 @@ By default all questions are multiple choice and the user can select an answer f
 After all questions are answered the results are shown, displaying how many questions where answered correctly
 and how many were wrong.
 
+
 ## Install
 
 `npm install -g knowledge-quest`
+
 
 ## Run
 
 `knowledge-quest`
 
+
 ## Adding questions
 
 Just run the app passing the path to your questions folder as first argument:
 
-`knowledge-quest [path-to-yout-questions-folder]`
+`knowledge-quest [absolute-path-to-yout-questions-folder]`
 
 It will read all the question files in the directory, construct the topics menu for each file 
 and once the user selects a topic display all available questions for it.
+
+
+## Question files
+
+Question files are normal JSON files.
+
+Expected file structure is:
+
+```
+{
+  "Topic title": [] <-- questions array
+}
+```
+
+_'Topic title'_ is what the user will see in the interactive menu.
+
+
+## Question format
+
+Each question is a plan JavaScript object.
+Expected structure:
+
+```
+{
+  "type": "list",
+  "name": "a unique name for this question",
+  "message": "The question you want to ask",
+  "choices": [
+    {
+      "name": "An answer, the correct one, note the value below.",
+      "value": true
+    },
+    {
+      "name": "An answer, incorect one.",
+      "value": false
+    },
+    {
+      "name": "Another incorrect answer.",
+      "value": false
+    }
+  ]
+}
+```
+
+*IMPORTANT:* If you have repeated question names the final count won't be correct!
+Answering questions with repeated names will overwrite previous answers for that question name.
+
 
 ## Sample questions file
 
@@ -95,6 +146,7 @@ and once the user selects a topic display all available questions for it.
   ]
 }
 ```
+
 
 ## Reference
 

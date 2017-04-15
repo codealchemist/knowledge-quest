@@ -84,7 +84,7 @@ function displayTopicQuestions ({topic}) {
 function displayResults () {
   console.log(`
     ${selectedTopic} RESULTS:
-    
+
     - Correct  : ${results.correct}
     - Incorrect: ${results.incorrect}
   `)
