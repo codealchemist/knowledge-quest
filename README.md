@@ -1,4 +1,7 @@
-# knowledge-quest
+# knowledge-quest 
+
+[![Build Status](https://travis-ci.org/codealchemist/knowledge-quest.svg?branch=master)](https://travis-ci.org/codealchemist/knowledge-quest)
+
 Answer multiple choice questions and get a result of how well you did it.
 
 ```
