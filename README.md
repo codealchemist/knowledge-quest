@@ -4,23 +4,7 @@
 
 Answer multiple choice questions and get a result of how well you did it.
 
-```
-  _                        _          _                                        _
- | | ___ __   _____      _| | ___  __| | __ _  ___        __ _ _   _  ___  ___| |_
- | |/ / '_ \ / _ \ \ /\ / / |/ _ \/ _` |/ _` |/ _ \_____ / _` | | | |/ _ \/ __| __|
- |   <| | | | (_) \ V  V /| |  __/ (_| | (_| |  __/_____| (_| | |_| |  __/\__ \ |_
- |_|\_\_| |_|\___/ \_/\_/ |_|\___|\__,_|\__, |\___|      \__, |\__,_|\___||___/\__|
-                                        |___/               |_|
-
-? What topic do you want to play today? JavaScript
-? Select a proper implementation for promises in NodeJS: new Promise((resolve, reject) => {...})
-? When does the event loop runs in the browser? Always.
-
-    JavaScript RESULTS:
-
-    - Correct  : 2
-    - Incorrect: 0
-```
+![screenshot](https://cldup.com/eX_Sz0V-IV.gif)
 
 
 ## How it works?
