@@ -1,6 +1,6 @@
 {
   "name": "knowledge-quest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Answer multiple choice questions and get a result of how well you did it.",
   "main": "src/index.js",
   "bin": {
