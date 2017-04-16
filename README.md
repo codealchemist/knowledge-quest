@@ -9,13 +9,12 @@ Answer multiple choice questions and get a result of how well you did it.
 
 ## How it works?
 
-**knowledge-quest** reads JSON questions files in a directory and it constructs a topics menu from 
+**knowledge-quest** reads JSON question files in a directory and it constructs a topics menu from 
 the main key in each JSON file.
 When the app starts it displays the topics menu.
 After the user selects a topic it starts displaying all available questions for that topic, one after the other.
 By default all questions are multiple choice and the user can select an answer from a list.
-After all questions are answered the results are shown, displaying how many questions where answered correctly
-and how many were wrong.
+After all questions are answered the results are shown, displaying how many questions where answered correctly and how many were wrong.
 
 
 ## Install
@@ -32,7 +31,7 @@ and how many were wrong.
 
 Just run the app passing the path to your questions folder as first argument:
 
-`knowledge-quest [absolute-path-to-yout-questions-folder]`
+`knowledge-quest [absolute-path-to-your-questions-folder]`
 
 It will read all the question files in the directory, construct the topics menu for each file 
 and once the user selects a topic display all available questions for it.
@@ -55,13 +54,13 @@ _'Topic title'_ is what the user will see in the interactive menu.
 
 ## Question format
 
-Each question is a plan JavaScript object.
+Each question is a plain JavaScript object.
 Expected structure:
 
 ```
 {
   "type": "list",
-  "name": "a unique name for this question",
+  "name": "A unique name for this question",
   "message": "The question you want to ask",
   "choices": [
     {
@@ -69,7 +68,7 @@ Expected structure:
       "value": true
     },
     {
-      "name": "An answer, incorect one.",
+      "name": "An answer, incorrect one.",
       "value": false
     },
     {
@@ -81,7 +80,7 @@ Expected structure:
 ```
 
 *IMPORTANT:* If you have repeated question names the final count won't be correct!
-Answering questions with repeated names will overwrite previous answers for that question name.
+Answering questions with repeated names will overwrite previous count for that question name.
 
 
 ## Sample questions file
